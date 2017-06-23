@@ -7,7 +7,7 @@ import json
 print('type quit to quit\n\n')
 
 labeledData = []
-with open('./Listings/listing2.json') as f:
+with open('./listings3.json') as f:
     data = json.load(f)
     label = ''
     
@@ -31,7 +31,7 @@ with open('./Listings/listing2.json') as f:
     
         
     
-fout = open('./Listings/listing2-labeled.json', 'w')
+fout = open('./listing3-labeled.json', 'w')
 fout.write('[')
 count = 0
 maxLen = len(labeledData)
